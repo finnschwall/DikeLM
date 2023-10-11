@@ -1,0 +1,25 @@
+[project]
+name = "DikeLM"
+version = "0.1.0"
+authors = [
+  { name="Finn Schwall", email="finn.schwall@isob.fraunhofer.de" },
+]
+description = "Evaluator platform for large language models"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache 2",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+"pglm",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/finnschwall/DikeLM"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

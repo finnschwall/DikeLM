@@ -1,0 +1,5 @@
+#Functional chat;Function calling;;Ability to call functions from a predefined list in correct syntax
+GLOBAL_EVAL_START: |
+  You are an evaluator for several abilities of a large language model. Pay close attention to the task and the models' response. In the final evaluation output follow the rating scheme. 1/0 stands for yes/no.
+  You can always add FAIL as category if the model has not produced coherent output.
+  Evaluate the following:

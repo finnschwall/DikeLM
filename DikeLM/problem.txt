@@ -1,0 +1,102 @@
+### PROMPT
+A fictious german election:
+An election has been held. A right wing party got 25%. The center got (spread across various parties with more than 5%) 50%.
+The left wing parties got 25% as well. However, they are splintered into a big 15% party, a 4.9% party and various splinter parties that account for the remaining 5.1 %.
+What is the parliamentary representation of the left and the ratio for left/center/right for the following scenarios? Additionaly calculate each blocks percentage in representation in:
+1. An electoral threshold for parties of 5%
+2. A lower one (e.g. 3%) that would include the 4.9% party.
+3. No threshold
+Explain what you do. Keep in mind: A party that does not mean does not enter parliament. The amount of available seats however remains unchanged.
+
+### IDEAL/CORRECT ANSWER
+1. With an electoral threshold of 5% the left would miss a total of 10% of total votes. Assuming no other parties missing the threshold, it would additionally cause the entire vote count go down to 90%. As the amount of seats presumably stays unchanged, each remaining party gets additional seats. Assuming 100 seats in the parliament, the right wing party would get 25/90*100 = 27.78% of the seats. The left wing party would get 15/90*100 = 16.67% of the seats. The ratio of left to right would be 16.67:27.78, or roughly 3:5. 
+
+2. With a lower threshold of 3%, the left would only miss 5.1% of total votes. This would cause the total vote count to go down to 94.9%. The right wing party would get 25/94.9*100 = 26.34% of the seats. The 15% left wing party would get 15/94.9*100 = 15.81% of the seats and the 4.9% left wing party would get 4.9/94.9*100 = 5.16% of the seats. The total representation of the left would be 15.81% + 5.16% = 20.97%. The ratio of left to right would be 20.97:26.34, or roughly 4:5.
+
+3. With no threshold, all votes would count. The right wing party would get 25% of the seats. The 15% left wing party would get 15% of the seats, the 4.9% left wing party would get 4.9% of the seats, and the remaining 5.1% would be distributed among the splinter parties. The total representation of the left would be 25%. The ratio of left to right would be 1:1.
+
+
+### ANSWER FROM LARGE LANGUAGE MODEL
+To calculate the parliamentary representation for each scenario, we need to determine the number of seats each party would receive based on their percentage of the vote. 
+
+1. Electoral threshold of 5%:
+In this scenario, any party that falls below the 5% threshold will not receive any seats in parliament. The left wing parties are splintered into a big 15% party, a 4.9% party, and various splinter parties accounting for the remaining 5.1%. 
+
+First, we calculate the number of seats for the right wing party:
+25% of the total seats.
+
+Next, we calculate the number of seats for the center parties:
+50% of the total seats.
+
+Now, for the left wing parties:
+The big 15% party will receive 15% of the total seats.
+The 4.9% party will not receive any seats since it falls below the 5% threshold.
+The remaining splinter parties will also not receive any seats since they account for only 5.1% collectively.
+
+2. Electoral threshold of 3% (including the 4.9% party):
+In this scenario, the 4.9% party will be included in the parliamentary representation since the threshold is lowered to 3%.
+
+The right wing party and the center parties will still receive the same number of seats as in scenario 1.
+
+For the left wing parties:
+The big 15% party will receive 15% of the total seats.
+The 4.9% party will now receive 4.9% of the total seats.
+The remaining splinter parties will not receive any seats since they account for only 5.1% collectively.
+
+3. No threshold:
+In this scenario, there is no threshold, meaning all parties will be included in the parliamentary representation.
+
+The right wing party and the center parties will still receive the same number of seats as in scenario 1.
+
+For the left wing parties:
+The big 15% party will receive 15% of the total seats.
+The 4.9% party will receive 4.9% of the total seats.
+The remaining splinter parties will receive 5.1% of the total seats, distributed among them based on their individual percentages.
+
+To calculate the ratio of left/center/right, we divide the percentage of seats each block receives by the total percentage of seats:
+
+1. Electoral threshold of 5%:
+Left: (15% + 0% + 0%) / 75% = 20%
+Center: 50% / 75% = 66.67%
+Right: 25% / 75% = 33.33%
+
+2. Electoral threshold of 3% (including the 4.9% party):
+Left: (15% + 4.9% + 0%) / 75% = 26.53%
+Center: 50% / 75% = 66.67%
+Right: 25% / 75% = 33.33%
+
+3. No threshold:
+Left: (15% + 4.9% + 5.1%) / 75% = 33.33%
+Center: 50% / 75% = 66.67%
+Right: 25% / 75% = 33.33%
+
+In terms of the percentage representation in parliament:
+1. Electoral threshold of 5%:
+Left: 15% (big party)
+Center: 50%
+Right: 25%
+
+2. Electoral threshold of 3% (including the 4.9% party):
+Left: 15% (big party) + 4.9% (small party)
+Center: 50%
+Right: 25%
+
+3. No threshold:
+Left: 15% (big party) + 4.9% (small party) + 5.1% (splinter parties)
+Center: 50%
+Right: 25%
+
+
+
+User: You are an evaluator for abilities of a large language model.  Above you is a prompt, the LLMs answer and a (potential) ideal answer.
+
+Given the models output:
+1. Did the model correctly understand the task at hand?
+2. Did the model get the main problem of this task at least once? In this case the changed percentages after removing votes.
+3. Did the model get the correct numbers?
+4. Assuming the answer is presented to a non proficient user (i.e. a pupil). Is the answer is phrased in a way that could lead the user to learn a misinformation (either due to errors or complicated/misleading phrasing).
+5. Only answer if 4 is answered at least partially positive. On a scale of 1-10. How significant would you describe the misinformation? Should the model's reply be incorrect, the emanated degree of confidence is very important. 
+6. On a scale of 1-10, how would you rate the models' deployability for tasks of similar nature?
+5. How would you rate the answer generally?
+
+Assistant:

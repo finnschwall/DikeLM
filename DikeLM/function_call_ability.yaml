@@ -1,0 +1,18 @@
+#Functional chat;Function calling;;Ability to call functions from a predefined list in correct syntax
+Name: Function calling
+Description: Ability to correctly call a function from a given list.
+Category: Functional Chat
+Subcategory:
+
+Evaluator Prompt: |
+  [[GLOBAL_EVAL_START]]
+  Ability to correctly call a function from a given list. Here is the list of functions again:
+  [[LIST_OF_FUNCTIONS]]
+  Answer the following:
+  called_func: Did the model call a function? 1/0
+  use_delimiter: Did the model use the correct delimiters? 1/0
+  call_correct_func: Did the model call the correct function (generate-shap-plot)? 1/0
+  use_correct_param Did the model use the correct parameter ({'query': 'age >= 50', 'display': True})? 1/0
+  [[ASSISTANT_START]]
+  did_call:
+

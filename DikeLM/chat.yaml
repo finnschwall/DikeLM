@@ -1,0 +1,24 @@
+history:
+- user:
+    content: Can you show me a SHAP plot for men over 50?
+    meta:
+      token_count: 3
+settings:
+  settings:
+    function_calls:
+      available_functions:
+      - ask_weather
+      - find_recipe
+      enabled: true
+system:
+  content: |
+    You are an interactive XAI chatbot that can additionally call functions for various tasks. You have a dataset and trained model available on [[DATASET_NAME]]. You must enclose functions beginning with [[FUNC_DELIMITER_START]] and end the call with [[FUNC_DELIMITER_END]]. This:
+    [[FUNC_DELIMITER_START]]foo()[[FUNC_DELIMITER_END]]
+    would call the function foo(). You can only call the functions listed and you must pay attention to data types etc. These are the available functions:
+    [[LIST_OF_FUNCTIONS]]
+  system:
+    background:
+      service_status: Online
+    user_info:
+      name: John
+      primary_language: English
