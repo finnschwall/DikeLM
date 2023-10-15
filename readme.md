@@ -7,7 +7,7 @@ This readme being somewhat intelligible does not mean the project is ready to be
 (it isn't)
 
 <p align="center">
-<img src="icon.png" alt="drawing" width="75"/>
+<img src="icon.png" alt="drawing" width="200"/>
 </p>
 
 # Overview
@@ -21,7 +21,7 @@ DikeLM is part of the broader development of the [RIXA framework](https://github
 Have a look if you want to see a cool use case of this project or LLMs in general.
 # Installation
 ```bash
-pip3 install git+https://github.com/finnschwall/DikeLM
+pip3 install git+https://github.com/finnschwall/DikeLMt#egg=dikelm[normal]
 ```
 # Usage
 
